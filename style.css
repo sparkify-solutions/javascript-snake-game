@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #0087b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    background: #233046;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.game-details{
+    color: #c6c6c6;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 17px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.play-board{
+    width: 100%;
+    height: 100%;
+    background: #212837;
+    display: grid;
+    grid-template: repeat(30 , 1fr) / repeat(30 , 1fr);
+}
+.play-board .food{
+    background: #ff003d;
+    border-radius: 50%;
+}
+.play-board .snake{
+    background: #0087b0;
+}
